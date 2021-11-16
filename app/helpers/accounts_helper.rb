@@ -1,12 +1,12 @@
 module AccountsHelper
 
   def profile_picture account, width = 100
-    image_path = account.image.present? ? account.image.url : "placeholder-profile.jpg"
+    image_path = account.image.present? ? account.image.url : "placeholder-profile.png"
     image_tag(image_path, width: width, class: "img-circle img-fluid m-r-5")
   end
 
   def profile_thumbnail account, width = 40, classes = "img-circle m-r-5"
-    image_path = account.image.present? ? account.image.thumb.url : "placeholder-profile.jpg"
+    image_path = account.image.present? ? account.image.thumb.url : "placeholder-profile.png"
     image_tag(image_path, width: width, class: classes)
   end
 
