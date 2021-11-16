@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= tag(:meta, name: "description", content: yield(:meta_description)) if content_for?(:meta_description) %>
-    <meta name="author" content="@davidbattersby">
+    <meta name="author" content="@kurucaner">
 
-    <title><%= yield(:page_title) if content_for?(:page_title) %> - MyAPP</title>
+    <title><%= yield(:page_title) if content_for?(:page_title) %> Pixmarkt</title>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
         <a class="navbar-brand" href="<%= account_signed_in? ? dashboard_path : root_path %>">
-          MyAPP
+          Pixmarkt
         </a>
 
         <% if account_signed_in? %>

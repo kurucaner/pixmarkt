@@ -11,7 +11,7 @@
         <% end %>
 
         <%= link_to account.username, profile_path(account.username), class: "text-dark" %>
-        <p class="text-muted"><%= account.created_at > 2.days.ago ? "New to Instagram" : "Followed by #{ account.total_followers } #{ "user".pluralize(account.total_followers)}" %></p>
+        <p class="text-muted"><%= account.created_at > 2.days.ago ? "" : "Followed by #{ account.total_followers } #{ "user".pluralize(account.total_followers)}" %></p>
       </div>
     </div>
   </div>
